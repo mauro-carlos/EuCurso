@@ -1,0 +1,28 @@
+<script>
+/*
+IMC	CLASSIFICAÇÃO	OBESIDADE (GRAU)
+MENOR QUE 18,5	    MAGREZA	0
+ENTRE 18,5 E 24,9	NORMAL	0
+ENTRE 25,0 E 29,9	SOBREPESO	I
+ENTRE 30,0 E 39,9	OBESIDADE	II
+MAIOR QUE 40,0	    OBESIDADE GRAVE	III
+
+*/
+
+let peso = 82;
+let altura = 1.70;
+let imc = peso/altura ** 2;
+
+if (imc < 18.5) {
+    alert("magreza")
+}
+if (imc < 25){
+    alert ("Normal")
+}
+if (imc < 40) {
+    alert ("obsidade")
+} else {
+    alert("obsidade Grave")
+}
+
+</script>
