@@ -1,0 +1,45 @@
+<script>
+/*
+Neste desafio, o usuário vai entrando com números, em sequência, e cada vez que ele entrar com um novo número, o programa deve mostrar o maior e menor número de toda a sequência até então. Ao digitar “fim”, o programa encerra.
+
+*/
+
+/*let maior = 0;
+let menor = 0;
+x = ``;
+while (x!=`fim`) {
+    x = prompt(`entre com um numero ou pra encerrar escreva fim`)
+    numero = parseInt(x);
+    if (numero > maior) {
+        menor = maior;
+        maior = numero;        
+        alert(`o maior numero é o ${maior}`);
+        
+    }
+        
+        maior = numero;
+        alert(`o menor dos numeros é o ${menor}`);
+    
+    
+}
+*/
+
+let menorNumero = 0;
+let maiorNumero = 0;
+let entrada = prompt(`entre com um número, ou "fim" para encerrar`);
+alert(`o maior número até agora é  ${entrada} e o menor número é ${entrada}`);
+menorNumero = parseInt(entrada);
+maiorNumero = menorNumero;
+while (entrada != `fim`) {
+entrada = prompt(`entre com um número, ou "fim" para encerrar`);
+let temp = parseInt(entrada);
+if (temp > maiorNumero)
+maiorNumero = temp;
+if (temp < menorNumero)
+menorNumero = temp;
+alert(`o maior número até agora é ${maiorNumero} e o menor número é  ${menorNumero}`);
+}
+
+
+
+</script>

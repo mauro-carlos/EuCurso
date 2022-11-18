@@ -7,11 +7,12 @@ while (operacaoMatematica != "fim") {
 operacaoMatematica = prompt("entre com uma letra para escolher a operação matemática: a(dição), (s)ubtração, (m)ultiplicação ou (d)ivisão, ou (fim) para encerrar.");
 novaEntradaString = prompt("entre com o próximo número");
 n1 = parseInt(novaEntradaString);
-if (operacaoMatematica == "a") resultado = resultado + n1;
-if (operacaoMatematica == "s") resultado = resultado - n1;
-if (operacaoMatematica == "m") resultado = resultado * n1;
-if (operacaoMatematica == "d") resultado = resultado / n1;
+if (operacaoMatematica == "a") resultado += n1;
+if (operacaoMatematica == "s") resultado -= n1;
+if (operacaoMatematica == "m") resultado *= n1;
+if (operacaoMatematica == "d") resultado /= n1;
 alert("O resultado até o momento é: " + resultado);
+operacaoMatematica = prompt ("entre com fim ou continuar");
 }
 
 </script>
