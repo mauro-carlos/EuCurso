@@ -1,0 +1,17 @@
+<script>    
+let operacaoMatematica = "";
+let entradaInicial = prompt("entre com o primeiro número");
+let resultado = parseInt(entradaInicial);
+let novaEntradaString, n1;
+while (operacaoMatematica != "fim") {
+operacaoMatematica = prompt("entre com uma letra para escolher a operação matemática: a(dição), (s)ubtração, (m)ultiplicação ou (d)ivisão, ou (fim) para encerrar.");
+novaEntradaString = prompt("entre com o próximo número");
+n1 = parseInt(novaEntradaString);
+if (operacaoMatematica == "a") resultado = resultado + n1;
+if (operacaoMatematica == "s") resultado = resultado - n1;
+if (operacaoMatematica == "m") resultado = resultado * n1;
+if (operacaoMatematica == "d") resultado = resultado / n1;
+alert("O resultado até o momento é: " + resultado);
+}
+
+</script>
