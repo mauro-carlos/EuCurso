@@ -1,0 +1,20 @@
+<script>
+    let entrada;
+    let operacao = "";    
+    resultado = 0;
+    while (operacao  != "s" ){
+        entrada = parseInt(prompt("entre com um numero" ));
+        operacao = prompt(`Entre com a operaçao ("+, -, *, /, ** " )ou "s" para sair`);
+        
+    if (operacao == "+") {resultado += entrada;}
+    else if (operacao == "-") {resultado -= entrada;}
+    else if (operacao == "*") {resultado *= entrada;}
+    else if (operacao == "/") {resultado /= entrada;}
+    else if (operacao == "**") {resultado **= entrada ;}       
+        
+        
+    alert(`o resultado  agora esta acumulando : ${resultado}`);
+        
+    }
+    
+    </script>
