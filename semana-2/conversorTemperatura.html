@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*
+formula converter celsiu para farinheit (0 °C × 9/5) + 32 = 32 °F)
+Fórmula	converter farinheit para celsius (0 °F − 32) × 5/9 = -17,78 °C)
+Fórmula	converter celsius para celsius (0 °C + 273,15 = 273,15 K)
+Fórmula	converter celsius para kelvin (0 K − 273,15 = -273,1 °C)
+*/
+let  temperatura = parseFloat(prompt("Entre com o valor da temperatura Celsius para converter"));
+let converter = prompt("digite 'c' para Celsius, 'f' para Farinheit e 'k' para Kelvin");
+if (converter == "f") {
+   resultado = (temperatura * 9/5) + 32;
+   resultadoParaCelsius = (resultado - 32) * 5/9;
+   alert(`A conversao da temperatura de Celsius para Farinheit é ${resultado}`);
+   alert(`A conversao da temperatura de Farinheit  para Celsius  é ${resultadoParaCelsius}`);
+} else if (converter == "k") {
+   resultado = (temperatura + 273.15);
+   resultadoConversao = (resultado - 273.15);
+   alert(`A conversao da temperatura de Celsius para Kelvin é ${resultado}`);
+   alert(`A conversao da temperatura de kelvin para Celsius é ${resultadoConversao}`)
+} 
+</script>
+    
+</body>
+</html>
