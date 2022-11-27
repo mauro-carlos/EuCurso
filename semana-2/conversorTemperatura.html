@@ -9,24 +9,31 @@
 <body>
 <script>
 /*
-formula converter celsiu para farinheit (0 °C × 9/5) + 32 = 32 °F)
-Fórmula	converter farinheit para celsius (0 °F − 32) × 5/9 = -17,78 °C)
-Fórmula	converter celsius para celsius (0 °C + 273,15 = 273,15 K)
-Fórmula	converter celsius para kelvin (0 K − 273,15 = -273,1 °C)
+1 celsiu para farinheit (0 °C × 9/5) + 32 = 32 °F)
+2 farinheit para celsius (0 °F − 32) × 5/9 = -17,78 °C)
+3 celsius para kelvin (0 °C + 273,15 = 273,15 K)
+4 celsius para kelvin (0 K − 273,15 = -273,1 °C)
+5 farinheit para kelvin (32 °F − 32) × 5/9 + 273,15 = 273,15 K)
+6 kelvin para farinheit (32 K − 273,15) × 9/5 + 32 = -402,1 °F)
 */
-let  temperatura = parseFloat(prompt("Entre com o valor da temperatura Celsius para converter"));
-let converter = prompt("digite 'c' para Celsius, 'f' para Farinheit e 'k' para Kelvin");
-if (converter == "f") {
-   resultado = (temperatura * 9/5) + 32;
-   resultadoParaCelsius = (resultado - 32) * 5/9;
-   alert(`A conversao da temperatura de Celsius para Farinheit é ${resultado}`);
-   alert(`A conversao da temperatura de Farinheit  para Celsius  é ${resultadoParaCelsius}`);
-} else if (converter == "k") {
-   resultado = (temperatura + 273.15);
-   resultadoConversao = (resultado - 273.15);
-   alert(`A conversao da temperatura de Celsius para Kelvin é ${resultado}`);
-   alert(`A conversao da temperatura de kelvin para Celsius é ${resultadoConversao}`)
-} 
+let mensagem = "A temperatura convertida é: ";
+let entrada = prompt("Entre com (1) para converter Celsius para Fahreneit, (2) fahrinheit para Celsius, (3) Celsius para Kelvin, (4) celsius para Kelvin, (5) Fahreneit para Kelvin, (6) kelvin para Fahreneit");
+let temperatura = parseFloat(prompt("Entre com a Temperatura para Converter"));
+
+if (entrada == "1") {
+	alert(mensagem + (temperatura * 9/5) + 32);
+}else if (entrada == "2") {
+	alert(mensagem + (temperatura * 9/5 - 32));
+}else if (entrada == "3") {
+	alert(mensagem + (temperatura + 273.15));
+}else if (entrada == "4") {
+	alert(mensagem + (temperatura - 273.15));
+}else if (entrada == "5") {
+	alert(mensagem + (temperatura - 32 * 5/9 + 273.15));
+}else
+ alert(mensagem + ((temperatura - 273.15) * 5/9 + 32));
+
+   
 </script>
     
 </body>
