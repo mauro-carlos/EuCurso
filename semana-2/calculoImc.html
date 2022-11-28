@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*
+        IMC 	Classificação 	Obesidade (grau)
+Menor que 18,5 	Magreza 	0
+Entre 18,5 e 24,9 	Normal 	0
+Entre 25,0 e 29,9 	Sobrepeso 	I
+Entre 30,0 e 39,9 	Obesidade 	II
+Maior que 40,0 	Obesidade Grave 	III
+*/
+let altura = prompt("digite a Sua altura");
+let peso = prompt ("Digite o seu Peso");
+let calculoImc = (peso, altura)=> {
+    return peso/(altura*altura);
+}
+imc = calculoImc(peso,altura);
+if (imc < 18.5) {
+    alert ("Classificação 'Magreza' com imc " + imc );
+}else if (imc < 24.9){
+    alert ("Classificação 'Normal' com imc " + imc );
+}else if (imc < 29.9){
+    alert ("Classificação 'Sobrepeso' com imc " + imc );
+}else if (imc < 39.9){
+    alert ("Classificação 'Obesidade' com imc " + imc );
+}else alert("Classificação 'Obesidade Grave' com imc " + imc);
+
+    </script>
+    
+</body>
+</html>
