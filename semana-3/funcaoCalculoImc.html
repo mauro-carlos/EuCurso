@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculoImc(peso,altura){
+            return peso/altura**2;
+        }
+        let calculoImc2 = (peso,altura)=> {
+            alert("Entrou na função calculaImc2");
+            return peso/altura**2;
+        }
+
+
+        let peso = prompt("Entre com o Peso");
+        let altura = prompt("Entre com a Altura");
+        let imc = calculoImc2(peso, altura);
+
+        if (imc < 18.5) mensagem = "Abaixo do Peso";
+        else if (imc < 24.9) mensagem = "Peso Normal";
+        else if (imc < 29.9) mensagem = "Acima do Peso";
+        else mensagem = "Obesidade";
+        alert("Sua Classificaçao é " + mensagem);
+
+        
+    </script>
+    
+</body>
+</html>
