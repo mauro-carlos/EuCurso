@@ -1,0 +1,30 @@
+win+r/cmd/ok //abre o prompt do windows
+pesquisar/executar //abre o prompt do windows
+cd .. volta pasta
+mkdir nomePasta cria uma pasta
+cd nomePasta entra na pasta
+
+------------------------------------------
+git init //inicia o git
+git -version //versão do git
+git config --global user.name"nomeUser" //conecta ao nome do git hub
+git config --global user.email email // email cadastrado no git ghub
+git log // mostra quem esta logado
+git status // verifica o repositorio
+git add . //adiciona todos os arquivos
+git add .all // adiciona todos os arquivos
+git add nome.html // add um arquivo com nome e tipo identificados
+git commit -m // comentario logo depois de add
+git restore . // volta ao arquivo antigo.Só pode usar se não utilizou o git add . e git commit-m
+git branch novaLinha // cria uma nova linha
+git checkout novaLinha// entra na novaLinha
+git checkout master// entra na linha master
+git merge novaLinha //mescla as linhas
+
+git push -u origin master // enviar o arquivo para o git hub
+git push -u origin novaLinha //enviar a novaLinha para o git hub
+
+git push https://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@github.com/leonidasmaterial/aula02 // envia o arquivo
+
+git pull 
+git pull https://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@github.com/leonidasmaterial/aula02 // busca no git hub
