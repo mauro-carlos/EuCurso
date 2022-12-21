@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>        
+       let estrutura = [
+        [{x:1,y:12},{x:10,y:20},{x:3,y:10}],
+        [{x:14,y:12},{x:1,y:10}],
+        [{x:15,y:17}]
+       ]
+       console.log(estrutura);
+       estrutura.forEach(e=>e.forEach(a=>console.log(`x = ${a.x}, y: ${a.y}`)));
+       console.log("FOR OF estrutura ====================")       
+       for (let elemento of estrutura){
+       for ( let item of elemento){
+        console.log(`x : ${item.x}, Y: ${item.y}`)
+        
+       }
+    }
+
+
+    </script>
+    
+</body>
+</html>
